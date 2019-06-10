@@ -14,11 +14,11 @@ void setup() {
 void loop() {
   if(wg.available())
   {
-    Serial.print("Wiegand HEX = ");
-    Serial.print(wg.getCode(),HEX);
-    Serial.print(", DECIMAL = ");
+//    Serial.print("Wiegand HEX = ");
+//    Serial.print(wg.getCode(),HEX);
+    Serial.print(", CODE = ");
     Serial.print(wg.getCode());
-    Serial.print(", Type W");
-    Serial.println(wg.getWiegandType());    
+//    Serial.print(", Type W");
+//    Serial.println(wg.getWiegandType());    
   }
 }
